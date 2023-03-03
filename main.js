@@ -11,6 +11,7 @@ depositBtn.addEventListener('click', () => {
     const value = depositInput.value;
     if (Number(value) < 500){
         alert("Sorry, Please less than 500!!!");
+        depositInput.value = '';
     }
     else{
         const depositValue = Number(deposit.innerText) + Number(value);
@@ -29,8 +30,10 @@ withdrawBtn.addEventListener('click', () => {
     const value = withdrawInput.value;
     if (Number(value) === 0) {
         alert("You don't have any balance to withdraw");
+        withdrawInput.value = '';
     } else if (Number(value) > Number(balance.innerText)) {
         alert("You don't have that much balance to withdraw");
+        withdrawInput.value = '';
     } else {
         const balanceValue = Number(balance.innerText) - Number(value);
         const withdrawValue = Number(withdraw.innerText) + Number(value);
