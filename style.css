@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 20%;
+}
+
+.middle-head {
+    width: 60%;
+    text-align: center;
+    color: white;
+}
+
+.right-icon-profile {
+    width: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: baseline;
+    justify-content: flex-end;
+}
+
+.right-icon-profile img {
+    width: 24px;
+
+}
+
+.profile {
+    margin-left: 18px;
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 30px;
+    border: 2px solid white;
+}
+
+.head-backgroud {
+    /* background-color: blue; */
+    width: 100%;
+    height: 310px;
+    background: url(img/marketplace-hero.png);
+    background-attachment: cover;
+}
+
+.logo h1 {
+    color: #f33a3a;
+    margin-top: 12px;
+}
+
+.middle-head h2 {
+    font-size: 34px;
+    font-weight: 400;
+}
+
+.middle-head p {
+    font-size: 17px;
+    letter-spacing: 7px;
+    color: #b8b9aa;
+}
+
+.money-output {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex: auto;
+}
+
+.money-input {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex: auto;
+}
+
+.money-box {
+    margin-top: -174px;
+}
+
+.box {
+    width: 300px;
+    height: 200px;
+    background: white;
+    margin: 20px;
+    box-shadow: rgb(0 0 0 / 20%) 1px 0px 4px;
+    border-radius: 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    text-align: center;
+}
+
+
+.diposit-money-output-content {
+    width: 100%;
+}
+
+.output-content-Taka {
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.deposit-input {
+    color: #333;
+    font-size: 14px;
+    margin: 0 auto;
+    padding: 10px 10px;
+    border-radius: 7px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid #e7e3e3;
+    width: 55%;
+    display: block;
+    transition: all 0.3s;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.deposit-btn {
+    background-color: #c2fbd7;
+    border-radius: 100px;
+    box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset, rgba(44, 187, 99, .15) 0 1px 2px, rgba(44, 187, 99, .15) 0 2px 4px, rgba(44, 187, 99, .15) 0 4px 8px, rgba(44, 187, 99, .15) 0 8px 16px, rgba(44, 187, 99, .15) 0 16px 32px;
+    color: green;
+    cursor: pointer;
+    display: inline-block;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.deposit-btn:hover{
+    box-shadow: rgba(44, 187, 99, .35) 0 -25px 18px -14px inset, rgba(44, 187, 99, .25) 0 1px 2px, rgba(44, 187, 99, .25) 0 2px 4px, rgba(44, 187, 99, .25) 0 4px 8px, rgba(44, 187, 99, .25) 0 8px 16px, rgba(44, 187, 99, .25) 0 16px 32px;
+    transform: scale(1.05) rotate(-1deg);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+}
