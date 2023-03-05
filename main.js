@@ -31,7 +31,10 @@ withdrawBtn.addEventListener('click', () => {
     if (Number(value) === 0) {
         alert("You don't have any balance to withdraw");
         withdrawInput.value = '';
-    } else if (Number(value) > Number(balance.innerText)) {
+    } else if (Number(value) < 0) {
+        alert("You don't have any balance to withdraw");
+        withdrawInput.value = '';}
+    else if (Number(value) > Number(balance.innerText)) {
         alert("You don't have that much balance to withdraw");
         withdrawInput.value = '';
     } else {
